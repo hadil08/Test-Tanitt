@@ -16,7 +16,7 @@ services:
 
   # Spring Boot service
   springboot-app:
-    image: salmakacem199/deploymentspring:spring
+    image: hadil2000/jwt:latest
     ports:
       - "8081:8081"
     depends_on:
@@ -33,7 +33,7 @@ services:
       tty: true
   # Angular app service
   angular-app:
-    image: salmakacem199/springpi:front
+    image: hadil2000/frontend:latest
     ports:
       - "4200:80"
     depends_on:
