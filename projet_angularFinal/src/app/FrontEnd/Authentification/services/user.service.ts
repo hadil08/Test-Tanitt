@@ -9,7 +9,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root',
 })
 export class UserService {
-  PATH_OF_API = 'http://172.213.169.60:8081/SKyTeck';
+  PATH_OF_API = 'http://172.19.43.23:8081/SKyTeck';
   private userDataSubject: BehaviorSubject<User | null> = new BehaviorSubject<User | null>(null);
 
   requestHeader = new HttpHeaders({ 'No-Auth': 'True' });
