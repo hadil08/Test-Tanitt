@@ -7,7 +7,7 @@ import { Participation } from '../Models/Participationevent';
   providedIn: 'root'
 })
 export class ParticipationServiceService {
-  private apiUrl = 'http://172.213.169.60:8081/SKyTeck/part'
+  private apiUrl = 'http://172.19.43.23:8081/SKyTeck/part'
   constructor(private http: HttpClient) { }
 
   getParticipationsByEventCreatorId(Id: number): Observable<Participation[]> {
