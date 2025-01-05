@@ -7,7 +7,7 @@ import { Evenement } from '../Models/event';
   providedIn: 'root'
 })
 export class EventServiceService {
-  private apiUrl = 'http://172.213.169.60:8081/SKyTeck/event'
+  private apiUrl = 'http://172.19.43.23:8081/SKyTeck/event'
   constructor(private http: HttpClient) { }
   getEventsByUserId(userId: number): Observable<Evenement[]> {
     return this.http.get<Evenement[]>(`${this.apiUrl}/user/${userId}`);
